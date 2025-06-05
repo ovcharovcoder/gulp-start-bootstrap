@@ -28,10 +28,10 @@ body {
 }
 
 // Connect the mixin as in the example:
-.container-1440 {
-  @include container-custom(1440px);
+.container-1430 {
+  @include container-custom(1430px);
 }
 
-.container-1820 {
-  @include container-custom(1820px);
+.container-1630 {
+  @include container-custom(1630px);
 }
