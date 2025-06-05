@@ -1,5 +1,22 @@
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 @import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+
 body {
-  background-color: #f8f9fa;
+  font-size: 16px;
+  background-color: $whiteColor;
+  @include fontBase-400;
+  line-height: 1.35;
+}
+
+.container-1440 {
+  @extend .container;
+  max-width: 1440px;
+}
+
+.container-1820 {
+  max-width: 1820px;
+  @extend .container;
 }

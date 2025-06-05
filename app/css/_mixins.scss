@@ -1,0 +1,57 @@
+// Fonts
+@mixin fontBase-300 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontBase-400 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontBase-500 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontBase-600 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontBase-700 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontHeading-300 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontHeading-400 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontHeading-500 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin fontHeading-600 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+// @include fontBase-400;
