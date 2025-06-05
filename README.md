@@ -97,7 +97,7 @@ npm install --save-dev gulp
 
 Корисні плагіни:
 ----------------------------------------------------
-Для зручності роботи, рекомендую викорстовувати наступні плагіни для VS Code:
+Для зручності роботи, рекомендую використовувати наступні плагіни для VS Code:
 - <a href="https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets">Bootstrap 5 & Font Awesome Snippets</a>.
 - <a href="https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode">Bootstrap 5 Quick Snippets</a>.
 
