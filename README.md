@@ -68,7 +68,6 @@ npm install --save-dev gulp
 
 - @import  'vars';  // Вказуються стилі змінних
 - @import  'mixins'; // Вказуються міксини
-- @import  'optimize';  // reset css
 - @import  'anim'; // Вказуються стилі для анімації
 - @import  'fonts'; // Вказуються стилі для шрифтів
 - @import  'global';  // Вказуються глобальні стилі
