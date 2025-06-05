@@ -95,6 +95,9 @@ npm install --save-dev gulp
 
 @@include('footer.html') - під'єднуємо footer.html
 
+Корисні плагіни:
+----------------------------------------------------
+Для зручності роботи, рекомендую викорстовувати плагін для VS Code: "Bootstrap 5 & Font Awesome Snippets".
 
 **Приємної роботи!**
 
