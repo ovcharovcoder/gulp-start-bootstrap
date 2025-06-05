@@ -84,3 +84,5 @@ npm install --save-dev gulp
 
 
 Приємної роботи!
+
+<img src="img.jpg" alt="image">
