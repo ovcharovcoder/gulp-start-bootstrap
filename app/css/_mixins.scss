@@ -14,3 +14,22 @@ body {
    @include fontBase-400;
 }
 */
+
+// if you need to have a container larger than the standard one, you can create it through a mixin:
+
+@mixin container-custom($width) {
+  width: 100%;
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-1440 {
+  @include container-custom(1440px);
+}
+
+.container-1820 {
+  @include container-custom(1820px);
+}
