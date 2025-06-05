@@ -11,10 +11,6 @@
   },
   "author": "Andriy Ovcharov",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
-  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "autoprefixer": "^10.4.19",
