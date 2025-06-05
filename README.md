@@ -9,7 +9,7 @@
 **Збірка підтримує:** 
 - Gulp: CLI version: 3.0.0
 - Node JS: 22.13.1 (LTS)
-- Bootstrap 5: v.5.3.6
+- Bootstrap 5: v.5.3.6. У Збірці місяться файли Bootstrap 5: bootstrap.bundle.min.js та bootstrap.min.css. За потреби, нову версію можна завантажити за лінком: https://getbootstrap.com/docs/5.3/getting-started/download 
 
 ЗБІРКА ДОЗВОЛЯЄ:
 -------------------------------------------------
