@@ -11,9 +11,4 @@ body {
   line-height: 1.35;
 }
 
-//Example of container larger than 1320px
-.container-1440 {
-  @extend .container;
-  max-width: 1440px;
-}
 
