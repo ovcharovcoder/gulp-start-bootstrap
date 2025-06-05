@@ -17,7 +17,7 @@ body {
 
 
 
-// if you need to have a container larger than the standard one, you can create it through a mixin:
+// if you need to have a container larger than the standard one (1320px), you can create it through a mixin:
 @mixin container-custom($width) {
   width: 100%;
   max-width: $width;
