@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const { src, dest, watch, parallel, series } = gulp;
+const fs = require('fs'); // Додаємо fs для створення папки
 const plugins = {
   concat: require('gulp-concat'),
   uglify: require('gulp-uglify'),
@@ -26,7 +27,7 @@ const plugins = {
 const paths = {
   imagesSrc: 'app/images/src/**/*.{jpg,jpeg,png,svg,webp}',
   scriptsSrc: ['app/vendor/js/bootstrap.bundle.min.js', 'app/js/main.js'],
-  stylesSrc: ['app/vendor/css/bootstrap.min.css', 'app/css/main.scss'],
+  stylesSrc: ['app/vendor/css/bootstrap.min.css', 'app/scs/main.scss'],
   htmlSrc: 'app/pages/**/*.html',
   fontsSrc: 'app/fonts/src/*.{ttf,otf}',
 };
@@ -149,6 +150,7 @@ function scriptsProduction() {
 
 // Styles from Bootstrap 5
 function styles() {
+  fs.mkdirSync('app/css', { recursive: true }); // Створюємо app/css/
   return src(paths.stylesSrc, { allowEmpty: true })
     .pipe(
       plugins.plumber({
@@ -171,10 +173,11 @@ function styles() {
     .pipe(plugins.sourcemaps.write('.'))
     .pipe(dest('app/css'))
     .pipe(plugins.browserSync.stream())
-    .on('data', file => console.log('Processing стилів:', file.path));
+    .on('data', file => console.log('Processing styles:', file.path));
 }
 
 function stylesProduction() {
+  fs.mkdirSync('app/css', { recursive: true }); // Створюємо app/css/
   return src(paths.stylesSrc, { allowEmpty: true })
     .pipe(
       plugins.plumber({
@@ -261,7 +264,7 @@ function sync(done) {
     },
     err => {
       if (err) {
-        console.error('BrowserSync помилка:', err);
+        console.error('BrowserSync error:', err);
         return done(err);
       }
       console.log('BrowserSync запущено');
@@ -275,9 +278,9 @@ function watching() {
   watch(
     [
       'app/vendor/css/*.css',
-      'app/css/*.scss',
-      'app/components/*.html',
-      'app/pages/*.html',
+      'app/scs/**/*.scss',
+      'app/components/**/*.html',
+      'app/pages/**/*.html',
     ],
     parallel(styles, pages)
   );
