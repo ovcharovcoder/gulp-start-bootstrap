@@ -27,7 +27,7 @@ const plugins = {
 const paths = {
   imagesSrc: 'app/images/src/**/*.{jpg,jpeg,png,svg,webp}',
   scriptsSrc: ['app/vendor/js/bootstrap.bundle.min.js', 'app/js/main.js'],
-  stylesSrc: ['app/vendor/css/bootstrap.min.css', 'app/scss/main.scss'], // Виправлено scs → scss
+  stylesSrc: ['app/vendor/css/bootstrap.min.css', 'app/scss/main.scss'],
   htmlSrc: 'app/pages/**/*.html',
   fontsSrc: 'app/fonts/src/*.{ttf,otf}',
 };
