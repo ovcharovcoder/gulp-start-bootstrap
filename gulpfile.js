@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const { src, dest, watch, parallel, series } = gulp;
-const fs = require('fs'); // Додаємо fs для створення папки
+const fs = require('fs');
 const plugins = {
   concat: require('gulp-concat'),
   uglify: require('gulp-uglify'),
@@ -150,7 +150,7 @@ function scriptsProduction() {
 
 // Styles from Bootstrap 5
 function styles() {
-  fs.mkdirSync('app/css', { recursive: true }); // Створюємо app/css/
+  fs.mkdirSync('app/css', { recursive: true });
   return src(paths.stylesSrc, { allowEmpty: true })
     .pipe(
       plugins.plumber({
@@ -177,7 +177,7 @@ function styles() {
 }
 
 function stylesProduction() {
-  fs.mkdirSync('app/css', { recursive: true }); // Створюємо app/css/
+  fs.mkdirSync('app/css', { recursive: true });
   return src(paths.stylesSrc, { allowEmpty: true })
     .pipe(
       plugins.plumber({
