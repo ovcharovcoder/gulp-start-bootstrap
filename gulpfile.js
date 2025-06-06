@@ -26,7 +26,7 @@ const plugins = {
 const paths = {
   imagesSrc: 'app/images/src/**/*.{jpg,jpeg,png,svg,webp}',
   scriptsSrc: ['app/vendor/js/bootstrap.bundle.min.js', 'app/js/main.js'],
-  stylesSrc: 'app/css/main.scss',
+  stylesSrc: ['app/vendor/css/bootstrap.min.css', 'app/css/main.scss'],
   htmlSrc: 'app/pages/**/*.html',
   fontsSrc: 'app/fonts/src/*.{ttf,otf}',
 };
@@ -77,7 +77,7 @@ function images() {
     .pipe(
       plugins.plumber({
         errorHandler: plugins.notify.onError(
-          'Error image: <%= error.message %>'
+          'Error images: <%= error.message %>'
         ),
       })
     )
@@ -130,7 +130,7 @@ function scripts() {
     .pipe(plugins.sourcemaps.write('.'))
     .pipe(dest('app/js'))
     .pipe(plugins.browserSync.stream())
-    .on('data', file => console.log('Processing scripts:', file.path));
+    .on('data', file => console.log('Processing script:', file.path));
 }
 
 function scriptsProduction() {
@@ -159,16 +159,19 @@ function styles() {
     )
     .pipe(plugins.sourcemaps.init())
     .pipe(
-      plugins
-        .sass({ outputStyle: 'compressed' })
-        .on('error', plugins.sass.logError)
+      plugins.if(
+        file => file.extname === '.scss',
+        plugins
+          .sass({ outputStyle: 'compressed' })
+          .on('error', plugins.sass.logError)
+      )
     )
     .pipe(plugins.postcss([plugins.autoprefixer(), plugins.cssnano()]))
     .pipe(plugins.concat('style.min.css'))
     .pipe(plugins.sourcemaps.write('.'))
     .pipe(dest('app/css'))
     .pipe(plugins.browserSync.stream())
-    .on('data', file => console.log('Processing styles:', file.path));
+    .on('data', file => console.log('Processing стилів:', file.path));
 }
 
 function stylesProduction() {
@@ -181,9 +184,12 @@ function stylesProduction() {
       })
     )
     .pipe(
-      plugins
-        .sass({ outputStyle: 'compressed' })
-        .on('error', plugins.sass.logError)
+      plugins.if(
+        file => file.extname === '.scss',
+        plugins
+          .sass({ outputStyle: 'compressed' })
+          .on('error', plugins.sass.logError)
+      )
     )
     .pipe(
       plugins.postcss([
@@ -204,6 +210,26 @@ function stylesProduction() {
             /^popover/,
             /^list-unstyled/,
             /^fw-bold/,
+            /^btn/,
+            /^card/,
+            /^container/,
+            /^row/,
+            /^col/,
+            /^nav/,
+            /^navbar/,
+            /^form/,
+            /^alert/,
+            /^badge/,
+            /^breadcrumb/,
+            /^pagination/,
+            /^table/,
+            /^list-group/,
+            /^d-/,
+            /^m-/,
+            /^p-/,
+            /^text-/,
+            /^bg-/,
+            /^border-/,
           ],
         }),
       ])
@@ -235,10 +261,10 @@ function sync(done) {
     },
     err => {
       if (err) {
-        console.error('BrowserSync error:', err);
+        console.error('BrowserSync помилка:', err);
         return done(err);
       }
-      console.log('BrowserSync start');
+      console.log('BrowserSync запущено');
       done();
     }
   );
@@ -247,7 +273,12 @@ function sync(done) {
 // Watching
 function watching() {
   watch(
-    [paths.stylesSrc, 'app/components/*.html', 'app/pages/*.html'],
+    [
+      'app/vendor/css/*.css',
+      'app/css/*.scss',
+      'app/components/*.html',
+      'app/pages/*.html',
+    ],
     parallel(styles, pages)
   );
   watch(paths.scriptsSrc, { delay: 100 }, series(cleanScripts, scripts));
@@ -264,7 +295,7 @@ function watching() {
 
 // Cleaning
 function cleanDist() {
-  return src('dist/**/*', { allowEmpty: true }).pipe(plugins.clean());
+  return src('dist/*', { allowEmpty: true }).pipe(plugins.clean());
 }
 
 // Build for production
@@ -272,11 +303,10 @@ function building() {
   return src(
     [
       'app/css/*.css',
-      'app/css/fonts/*.{woff,woff2}',
-      'app/images/**/*.{svg,webp,avif}',
+      'app/images/*.{svg,webp,avif}',
       'app/fonts/*.{woff,woff2}',
-      'app/js/*.js',
-      'app/**/*.html',
+      'app/js/main.min.js',
+      'app/*.html',
     ],
     { base: 'app', allowEmpty: true }
   ).pipe(dest('dist'));
