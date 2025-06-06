@@ -18,27 +18,3 @@ body {
 
 
 
-// if you need to have a container larger than the standard one (1320px), you can create it through a mixin:
-/*
-@mixin container-custom($width) {
-  width: 100%;
-  max-width: $width;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-*/
-
-// Connect the mixin as in the example:
-/*
-.container-1430 {
-  @include container-custom(1430px);
-}
-
-.container-1630 {
-  @include container-custom(1630px);
-}
-*/
-
-
