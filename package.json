@@ -11,6 +11,7 @@
   },
   "author": "Andriy Ovcharov",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "autoprefixer": "^10.4.19",
@@ -31,6 +32,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "sass": "^1.77.6"
