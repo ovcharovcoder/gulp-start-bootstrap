@@ -96,6 +96,9 @@ npm install --save-dev gulp
 
 @@include('footer.html') - під'єднуємо footer.html
 
+## ☕ Сподобалась збірка? 
+Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
+
 Корисні плагіни:
 ----------------------------------------------------
 Для зручності роботи, рекомендую використовувати наступні плагіни для VS Code:
