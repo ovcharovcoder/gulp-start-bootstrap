@@ -102,6 +102,10 @@ npm install --save-dev gulp
 - <a href="https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets">Bootstrap 5 & Font Awesome Snippets</a>.
 - <a href="https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode">Bootstrap 5 Quick Snippets</a>.
 
+ ## Ліцензія
+
+<a href="LICENSE">MIT</a>
+
 ## ☕ Сподобалась збірка? 
 Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
 
