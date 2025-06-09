@@ -10,7 +10,7 @@
     "watch": "gulp watching"
   },
   "author": "Andriy Ovcharov <ovcharovcoder@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
