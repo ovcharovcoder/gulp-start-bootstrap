@@ -61,6 +61,10 @@ app/
 |   |-- index.html
 |
 |-- scss/
+|   |-- _vars.scss
+|   |-- _colors.scss // Палітра кольорів Bootstrap 5
+|   |-- _fonts.scss
+|   |-- _mixins.scss
 |   |-- main.scss
 |
 |-- vendor/
