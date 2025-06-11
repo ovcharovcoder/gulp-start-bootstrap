@@ -40,6 +40,42 @@ npm install --save-dev gulp
 
 Буде створено директорію dist, яку можна додати на хостинг.
 
+СТРУКТУРА ЗБІРКИ:
+----------------------------------------------------
+```
+app/
+|-- components/
+|   |-- header.html
+|   |-- footer.html
+|
+|-- fonts/
+|   |-- src/
+|   
+|-- images/
+|   |-- icons/
+|   |-- src/
+|
+|-- js/ 
+|   |-- main.js 
+|   
+|-- pages/
+|   |-- index.html
+|
+|-- scss/
+|   |-- main.scss
+|
+|-- vendor/
+|   |--css/   
+|     |-- bootstrap.min.css  
+|   |--js/   
+|     |-- bootstrap.bundle.min.js  
+|      
+|-- .gitignore
+|-- gulpfile.js 
+|-- package.json
+|-- readme.txt
+```
+
 
 ПЕРЕВІРКА РОБОЧОГО СТАНУ ЗБІРКИ:
 ----------------------------------------------------
