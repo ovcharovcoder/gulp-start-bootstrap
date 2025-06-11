@@ -140,18 +140,6 @@ app/
 - <a href="https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode">Bootstrap 5 Quick Snippets</a>.
 
 
-  $blue: #0d6efd;
-$indigo: #6610f2;
-$purple: #6f42c1;
-$pink: #d63384;
-$red: #dc3545;
-$orange: #fd7e14;
-$yellow: #ffc107;
-$green: #198754;
-$teal: #20c997;
-$cyan: #0dcaf0;
-
-
 ## ☕ Сподобалась збірка? 
 Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
 
