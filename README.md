@@ -10,7 +10,7 @@
 - Gulp: CLI version: 3.0.0
 - npm: 11.1.0
 - Node JS: 22.14.0 (LTS)
-- Bootstrap 5: v.5.3.6.<br> У Збірці місяться локальні файли Bootstrap 5: vendor/css/bootstrap.min.css та vendor/js/bootstrap.bundle.min.js. За потреби, нову версію можна завантажити за лінком: https://getbootstrap.com/docs/5.3/getting-started/download 
+- Bootstrap 5: v.5.3.6.<br> (У Збірці місяться локальні файли Bootstrap 5: vendor/css/bootstrap.min.css та vendor/js/bootstrap.bundle.min.js. За потреби, нову версію можна завантажити за лінком: https://getbootstrap.com/docs/5.3/getting-started/download) 
 
 ЗБІРКА ДОЗВОЛЯЄ:
 -------------------------------------------------
