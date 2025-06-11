@@ -65,7 +65,7 @@ app/
 |   |-- _colors.scss // Палітра кольорів Bootstrap 5
 |   |-- _fonts.scss // Стилі шрифтів
 |   |-- _mixins.scss // Міксини
-|   |-- main.scss
+|   |-- main.scss // Кастомні стилі
 |
 |-- vendor/
 |   |--css/   
