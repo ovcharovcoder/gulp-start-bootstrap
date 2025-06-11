@@ -61,10 +61,10 @@ app/
 |   |-- index.html // Головна сторінка до якої під"єнуються компоненти header.html, header.html
 |
 |-- scss/
-|   |-- _vars.scss
+|   |-- _vars.scss // Змінні
 |   |-- _colors.scss // Палітра кольорів Bootstrap 5
-|   |-- _fonts.scss
-|   |-- _mixins.scss
+|   |-- _fonts.scss // Стилі шрифтів
+|   |-- _mixins.scss // Міксини
 |   |-- main.scss
 |
 |-- vendor/
