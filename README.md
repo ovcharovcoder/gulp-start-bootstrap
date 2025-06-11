@@ -104,7 +104,7 @@ app/
 Де можна імпортувати додаткові файли:
 
 - @import  'vars';  // Вказуються стилі змінних
-- @import  'colors';  // Палітра кольорів Bootstrap 5: [Кольори](https://getbootstrap.com/docs/5.3/customize/color/)
+- @import  'colors';  // Палітра кольорів Bootstrap 5: [All colors](https://getbootstrap.com/docs/5.3/customize/color/#all-colors)
 - @import  'mixins'; // Вказуються міксини
 - @import  'anim'; // Вказуються стилі для анімації
 - @import  'fonts'; // Вказуються стилі для шрифтів
