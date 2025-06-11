@@ -68,15 +68,15 @@ app/
 |   |-- main.scss // Кастомні стилі
 |
 |-- vendor/
-|   |--css/   
-|     |-- bootstrap.min.css  
-|   |--js/   
-|     |-- bootstrap.bundle.min.js  
-|      
-|-- .gitignore
-|-- gulpfile.js 
-|-- package.json
-|-- readme.txt
+    |--css/   
+      |-- bootstrap.min.css  
+    |--js/   
+      |-- bootstrap.bundle.min.js  
+
+.gitignore
+gulpfile.js 
+package.json
+readme.txt
 ```
 
 
